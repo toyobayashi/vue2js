@@ -1,0 +1,5 @@
+const p = require('path').join(__dirname, 'App.vue')
+const { Parser } = require('..')
+const s = new Parser().parse(p)
+require('fs').writeFileSync(require('path').join(__dirname, 'App.js'), s.js, 'utf8')
+require('fs').writeFileSync(require('path').join(__dirname, 'App.css'), s.css, 'utf8')

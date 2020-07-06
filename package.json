@@ -1,0 +1,36 @@
+{
+  "name": "@tybys/vue2js",
+  "version": "0.0.0-dev",
+  "description": "Convert .vue to .js",
+  "main": "index.js",
+  "bin": {
+    "vue2js": "./bin/vue2js.js"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "scripts": {
+    "test": "node ./bin/vue2js.js ./test/App.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toyobayashi/vue2js.git"
+  },
+  "author": "toyobayashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toyobayashi/vue2js/issues"
+  },
+  "homepage": "https://github.com/toyobayashi/vue2js/tree/master/js#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@vue/component-compiler-utils": "^3.1.2",
+    "hash-sum": "^2.0.0"
+  },
+  "peerDependencies": {
+    "vue-template-compiler": "*"
+  }
+}

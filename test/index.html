@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="App.css">
+  <title>test</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.runtime.js"></script>
+  <script>
+    var module = { exports: {} };
+  </script>
+  <script src="App.js"></script>
+
+  <script>
+    new Vue({
+      render: h => h(module.exports.default)
+    }).$mount('#app')
+  </script>
+</body>
+</html>
